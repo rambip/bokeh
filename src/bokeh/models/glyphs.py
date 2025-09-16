@@ -165,6 +165,9 @@ class Marker(XYGlyph, LineGlyph, FillGlyph, HatchGlyph):
     fill properties, located at an (x, y) location with a specified
     size.
 
+    This is an abstract base class. For creating scatter plots with different
+    marker types, use the :class:`~bokeh.models.glyphs.Scatter` glyph instead.
+
     .. note::
         For simplicity, all markers have both line and fill properties
         declared, however some marker types (`asterisk`, `cross`, `x`)
